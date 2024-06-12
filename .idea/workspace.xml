@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="方法、继承中的方法、利用结构体嵌套实现继承性。">
-      <change afterPath="$PROJECT_DIR$/interface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface_assertion.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface_empty.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface_nest.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="1. 接口的定义与实现、接口嵌套、空接口（可代表任意数据类型）、接口断言。&#10;2. 使用type关键字，定义函数类型，使得代码结构更加清晰。&#10;   type CallbackFunc func(int, int) int&#9;//创建了一个新类型（不同的类型）&#10;   type CallbackFunc = func(int, int) int&#9;//创建了一个类型别名（同一个类型，不同的名字）">
+      <change afterPath="$PROJECT_DIR$/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error_custom.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panic_recover_defer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun_callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/fun_callback.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/defer.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JAVA/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Go Build.go build fun_callback.go">
+  <component name="RunManager" selected="Go Build.go build panic_recover_defer.go">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -70,6 +70,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/defer.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build error_custom.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/error_custom.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build error.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/error.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build fun_callback.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
@@ -78,45 +102,21 @@
       <filePath value="$PROJECT_DIR$/fun_callback.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build interface_assertion.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build panic_recover_defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/interface_assertion.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build interface_empty.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/interface_empty.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build interface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/interface.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build interface_nest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/interface_nest.go" />
+      <filePath value="$PROJECT_DIR$/panic_recover_defer.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build panic_recover_defer.go" />
+        <item itemvalue="Go Build.go build defer.go" />
+        <item itemvalue="Go Build.go build error_custom.go" />
+        <item itemvalue="Go Build.go build error.go" />
         <item itemvalue="Go Build.go build fun_callback.go" />
-        <item itemvalue="Go Build.go build interface_assertion.go" />
-        <item itemvalue="Go Build.go build interface_nest.go" />
-        <item itemvalue="Go Build.go build interface_empty.go" />
-        <item itemvalue="Go Build.go build interface.go" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718072262023</updated>
       <workItem from="1718072263935" duration="14738000" />
-      <workItem from="1718093441783" duration="19059000" />
+      <workItem from="1718093441783" duration="26035000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -152,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718155151830</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. 接口的定义与实现、接口嵌套、空接口（可代表任意数据类型）、接口断言。&#10;2. 使用type关键字，定义函数类型，使得代码结构更加清晰。&#10;   type CallbackFunc func(int, int) int&#9;//创建了一个新类型（不同的类型）&#10;   type CallbackFunc = func(int, int) int&#9;//创建了一个类型别名（同一个类型，不同的名字）">
+      <created>1718173554054</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718173554054</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +181,7 @@
     <MESSAGE value="指针 相关知识学习。" />
     <MESSAGE value="结构体 相关知识学习。" />
     <MESSAGE value="方法、继承中的方法、利用结构体嵌套实现继承性。" />
-    <option name="LAST_COMMIT_MESSAGE" value="方法、继承中的方法、利用结构体嵌套实现继承性。" />
+    <MESSAGE value="1. 接口的定义与实现、接口嵌套、空接口（可代表任意数据类型）、接口断言。&#10;2. 使用type关键字，定义函数类型，使得代码结构更加清晰。&#10;   type CallbackFunc func(int, int) int&#9;//创建了一个新类型（不同的类型）&#10;   type CallbackFunc = func(int, int) int&#9;//创建了一个类型别名（同一个类型，不同的名字）" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 接口的定义与实现、接口嵌套、空接口（可代表任意数据类型）、接口断言。&#10;2. 使用type关键字，定义函数类型，使得代码结构更加清晰。&#10;   type CallbackFunc func(int, int) int&#9;//创建了一个新类型（不同的类型）&#10;   type CallbackFunc = func(int, int) int&#9;//创建了一个类型别名（同一个类型，不同的名字）" />
   </component>
 </project>

@@ -34,7 +34,7 @@ func deferExample2() {
 	x := 10
 	defer fmt.Println(x)
 	x = 20
-	fmt.Println(x)
+	fmt.Println(x) //20、10
 }
 
 func deferExample3() {
