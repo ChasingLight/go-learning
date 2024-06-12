@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="指针 相关知识学习。">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct_nest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct_new_pointer.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="结构体 相关知识学习。">
+      <change afterPath="$PROJECT_DIR$/method.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/struct_nest_extend.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +22,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="ProjectId" id="2hiM5MXcwuVrHHkcROQRVEe08Rj" />
   <component name="ProjectLevelVcsManager">
@@ -44,32 +53,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JAVA/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Go Build.go build struct_nest.go">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build struct_nest_extend.go">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="go build func.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build method.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/func.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build pointer_func.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/pointer_func.go" />
+      <filePath value="$PROJECT_DIR$/method.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build struct.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -78,6 +81,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/struct.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build struct_nest_extend.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/struct_nest_extend.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build struct_nest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -98,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build struct_nest_extend.go" />
+        <item itemvalue="Go Build.go build method.go" />
         <item itemvalue="Go Build.go build struct_nest.go" />
         <item itemvalue="Go Build.go build struct_new_pointer.go" />
         <item itemvalue="Go Build.go build struct.go" />
-        <item itemvalue="Go Build.go build pointer_func.go" />
-        <item itemvalue="Go Build.go build func.go" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +125,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718072262023</updated>
-      <workItem from="1718072263935" duration="14478000" />
+      <workItem from="1718072263935" duration="14738000" />
+      <workItem from="1718093441783" duration="7777000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -123,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718086232601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="结构体 相关知识学习。">
+      <created>1718093048263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718093048263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,9 +158,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="指针 相关知识学习。" />
-    <option name="LAST_COMMIT_MESSAGE" value="指针 相关知识学习。" />
+    <MESSAGE value="结构体 相关知识学习。" />
+    <option name="LAST_COMMIT_MESSAGE" value="结构体 相关知识学习。" />
   </component>
 </project>
