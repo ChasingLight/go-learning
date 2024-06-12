@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="结构体 相关知识学习。">
-      <change afterPath="$PROJECT_DIR$/method.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct_nest_extend.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="方法、继承中的方法、利用结构体嵌套实现继承性。">
+      <change afterPath="$PROJECT_DIR$/interface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface_assertion.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface_empty.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface_nest.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun_callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/fun_callback.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JAVA/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Go Build.go build struct_nest_extend.go">
+  <component name="RunManager" selected="Go Build.go build fun_callback.go">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -67,53 +70,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="go build method.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build fun_callback.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/method.go" />
+      <filePath value="$PROJECT_DIR$/fun_callback.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build struct.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build interface_assertion.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/struct.go" />
+      <filePath value="$PROJECT_DIR$/interface_assertion.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build struct_nest_extend.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build interface_empty.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/struct_nest_extend.go" />
+      <filePath value="$PROJECT_DIR$/interface_empty.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build struct_nest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build interface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/struct_nest.go" />
+      <filePath value="$PROJECT_DIR$/interface.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build struct_new_pointer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build interface_nest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/struct_new_pointer.go" />
+      <filePath value="$PROJECT_DIR$/interface_nest.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build struct_nest_extend.go" />
-        <item itemvalue="Go Build.go build method.go" />
-        <item itemvalue="Go Build.go build struct_nest.go" />
-        <item itemvalue="Go Build.go build struct_new_pointer.go" />
-        <item itemvalue="Go Build.go build struct.go" />
+        <item itemvalue="Go Build.go build fun_callback.go" />
+        <item itemvalue="Go Build.go build interface_assertion.go" />
+        <item itemvalue="Go Build.go build interface_nest.go" />
+        <item itemvalue="Go Build.go build interface_empty.go" />
+        <item itemvalue="Go Build.go build interface.go" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718072262023</updated>
       <workItem from="1718072263935" duration="14738000" />
-      <workItem from="1718093441783" duration="7777000" />
+      <workItem from="1718093441783" duration="19059000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -142,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718093048263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="方法、继承中的方法、利用结构体嵌套实现继承性。">
+      <created>1718155151830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718155151830</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="指针 相关知识学习。" />
     <MESSAGE value="结构体 相关知识学习。" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构体 相关知识学习。" />
+    <MESSAGE value="方法、继承中的方法、利用结构体嵌套实现继承性。" />
+    <option name="LAST_COMMIT_MESSAGE" value="方法、继承中的方法、利用结构体嵌套实现继承性。" />
   </component>
 </project>

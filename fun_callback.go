@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+// CallbackFunc 使用type关键字，来定义函数类型（使代码结构更加清晰）
+// type CallbackFunc func(int, int) int	//创建了一个新类型（不同的类型）
+type CallbackFunc = func(int, int) int //创建了一个类型别名（同一个类型，不同的名字）
+
 func main() {
 	/*
 		Go语言支持函数式编程，可以将一个函数作为另一个函数的参数。
@@ -21,10 +25,14 @@ func main() {
 		return a - b
 	})
 	fmt.Println(res2)
+
+	var f CallbackFunc = sum
+	fmt.Printf("%T, %T\n", f, sum)
+
 }
 
 // 高阶函数，接收一个函数作为参数
-func process(a, b int, callback func(int, int) int) int {
+func process(a, b int, callback CallbackFunc) int {
 	return callback(a, b)
 }
 
