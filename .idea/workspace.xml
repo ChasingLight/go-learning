@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/file_operation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fileinfo_interface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/time.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="time包、fileinfo接口使用、file基础操作">
+      <change afterPath="$PROJECT_DIR$/io_copy_file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_read.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_write.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os_ReadDir.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_copy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,25 +57,27 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../l_package" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Go Build.go build basic (4)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build os_ReadDir.go">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="go build basic (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build basic (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/time.go" />
+      <filePath value="$PROJECT_DIR$/io_read.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -81,7 +86,7 @@
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/iota.go" />
+      <filePath value="$PROJECT_DIR$/io_write.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -93,31 +98,31 @@
       <filePath value="$PROJECT_DIR$/file_operation.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build basic (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/fileinfo.go" />
+      <filePath value="$PROJECT_DIR$/io_copy_file.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build random_num.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build os_ReadDir.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/random_num.go" />
+      <filePath value="$PROJECT_DIR$/os_ReadDir.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build basic (4)" />
-        <item itemvalue="Go Build.go build basic" />
-        <item itemvalue="Go Build.go build basic (2)" />
-        <item itemvalue="Go Build.go build random_num.go" />
+        <item itemvalue="Go Build.go build os_ReadDir.go" />
+        <item itemvalue="Go Build.go build basic (5)" />
         <item itemvalue="Go Build.go build basic (3)" />
+        <item itemvalue="Go Build.go build basic (1)" />
+        <item itemvalue="Go Build.go build basic (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +140,8 @@
       <workItem from="1718249081791" duration="307000" />
       <workItem from="1718264428661" duration="9254000" />
       <workItem from="1718325612444" duration="693000" />
-      <workItem from="1718329062178" duration="3072000" />
+      <workItem from="1718329062178" duration="3593000" />
+      <workItem from="1718333778059" duration="8227000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -172,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718181975248</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="time包、fileinfo接口使用、file基础操作">
+      <created>1718332580298</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718332580298</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +209,7 @@
     <MESSAGE value="方法、继承中的方法、利用结构体嵌套实现继承性。" />
     <MESSAGE value="1. 接口的定义与实现、接口嵌套、空接口（可代表任意数据类型）、接口断言。&#10;2. 使用type关键字，定义函数类型，使得代码结构更加清晰。&#10;   type CallbackFunc func(int, int) int&#9;//创建了一个新类型（不同的类型）&#10;   type CallbackFunc = func(int, int) int&#9;//创建了一个类型别名（同一个类型，不同的名字）" />
     <MESSAGE value="error、panic和recover 使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="error、panic和recover 使用" />
+    <MESSAGE value="time包、fileinfo接口使用、file基础操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="time包、fileinfo接口使用、file基础操作" />
   </component>
 </project>
