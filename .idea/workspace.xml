@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="文件读写操作、文件拷贝、递归遍历文件夹。">
-      <change afterPath="$PROJECT_DIR$/goroutine.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="协程 goroutine基本使用">
+      <change afterPath="$PROJECT_DIR$/channel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel_block_write_read.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel_deadlock.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sync_mutex_lock.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sync_waitgroup.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,15 +58,13 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Go Build.go build basic">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,7 +75,7 @@
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/io_read.go" />
+      <filePath value="$PROJECT_DIR$/sync_waitgroup.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -81,7 +84,16 @@
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/io_write.go" />
+      <filePath value="$PROJECT_DIR$/sync_mutex_lock.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build basic (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/channel.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -90,7 +102,7 @@
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/io_copy_file.go" />
+      <filePath value="$PROJECT_DIR$/channel_block_write_read.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -99,25 +111,16 @@
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/goroutine.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build os_ReadDir.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="basic" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/os_ReadDir.go" />
+      <filePath value="$PROJECT_DIR$/channel_deadlock.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build basic" />
-        <item itemvalue="Go Build.go build os_ReadDir.go" />
         <item itemvalue="Go Build.go build basic (5)" />
-        <item itemvalue="Go Build.go build basic (3)" />
+        <item itemvalue="Go Build.go build basic (4)" />
         <item itemvalue="Go Build.go build basic (1)" />
+        <item itemvalue="Go Build.go build basic (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +139,9 @@
       <workItem from="1718264428661" duration="9254000" />
       <workItem from="1718325612444" duration="693000" />
       <workItem from="1718329062178" duration="3593000" />
-      <workItem from="1718333778059" duration="11697000" />
+      <workItem from="1718333778059" duration="12520000" />
+      <workItem from="1718586363182" duration="4000" />
+      <workItem from="1718780668414" duration="18678000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -187,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718349232978</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="协程 goroutine基本使用">
+      <created>1718359306688</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718359306688</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +225,28 @@
     <MESSAGE value="error、panic和recover 使用" />
     <MESSAGE value="time包、fileinfo接口使用、file基础操作" />
     <MESSAGE value="文件读写操作、文件拷贝、递归遍历文件夹。" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件读写操作、文件拷贝、递归遍历文件夹。" />
+    <MESSAGE value="协程 goroutine基本使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="协程 goroutine基本使用" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sync_mutex_lock.go</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/channel_block_write_read.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/channel_block_write_read.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
