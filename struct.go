@@ -28,7 +28,7 @@ func main() {
 	stu3 := Student{name: "靳浩东", age: 30, sex: "男"}
 
 	// 3. 访问成员变量，使用点操作符（.）
-	var dormitory []Student
+	var dormitory []Student //声明一个切片
 	students := append(dormitory, stu1, stu2, stu3)
 	for _, student := range students {
 		fmt.Printf("学生姓名：%s，年龄：%d，性别：%s\n", student.name, student.age, student.sex)

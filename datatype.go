@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// int8 和 uint8 区别
-	// 前者有符号位（最高位是符号位，0代表正数，1代表复数，其余7为是数据位），后者无符号位。
+	// 前者有符号位（最高位是符号位，0代表正数，1代表负数，其余7为是数据位），后者无符号位。
 	var minInt8 = math.MinInt8
 	var maxInt8 = math.MaxInt8
 	fmt.Printf("int8 的取值范围：%d 到 %d\n", minInt8, maxInt8)
