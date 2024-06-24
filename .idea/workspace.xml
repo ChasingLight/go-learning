@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="channel 关闭、缓冲通道使用">
-      <change afterPath="$PROJECT_DIR$/channel_buffer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/channel_close.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/channel_oneway.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="channel 关闭、缓冲通道、定向通道使用">
+      <change afterPath="$PROJECT_DIR$/reflect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/select.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array_demo01.go" beforeDir="false" afterPath="$PROJECT_DIR$/array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array_type.go" beforeDir="false" afterPath="$PROJECT_DIR$/array_datatype.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datatype.go" beforeDir="false" afterPath="$PROJECT_DIR$/datatype.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slice_demo01.go" beforeDir="false" afterPath="$PROJECT_DIR$/slice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slice_demo02.go" beforeDir="false" afterPath="$PROJECT_DIR$/slice_expand.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel_oneway.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel_oneway.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,28 +54,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../l_package" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Go Build.go build basic (3)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build basic (2)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="go build basic (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="basic" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/array_iterate.go" />
-      <method v="2" />
     </configuration>
     <configuration name="go build basic (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
@@ -89,7 +72,7 @@
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/array_demo01.go" />
+      <filePath value="$PROJECT_DIR$/reflect.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -101,31 +84,40 @@
       <filePath value="$PROJECT_DIR$/slice.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build basic (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/select.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/switch_break_fallthrough.go" />
+      <filePath value="$PROJECT_DIR$/interface_empty.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build bit_operator.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build channel_oneway.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/bit_operator.go" />
+      <filePath value="$PROJECT_DIR$/channel_oneway.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build basic (3)" />
-        <item itemvalue="Go Build.go build basic (1)" />
         <item itemvalue="Go Build.go build basic (2)" />
         <item itemvalue="Go Build.go build basic" />
-        <item itemvalue="Go Build.go build bit_operator.go" />
+        <item itemvalue="Go Build.go build basic (4)" />
+        <item itemvalue="Go Build.go build channel_oneway.go" />
+        <item itemvalue="Go Build.go build basic (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +139,9 @@
       <workItem from="1718333778059" duration="12520000" />
       <workItem from="1718586363182" duration="4000" />
       <workItem from="1718780668414" duration="26490000" />
-      <workItem from="1718936504851" duration="4362000" />
+      <workItem from="1718936504851" duration="10128000" />
+      <workItem from="1719190507576" duration="729000" />
+      <workItem from="1719199177303" duration="2874000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -212,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718862513856</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="channel 关闭、缓冲通道、定向通道使用">
+      <created>1718954224624</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718954224624</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +241,7 @@
     <MESSAGE value="文件读写操作、文件拷贝、递归遍历文件夹。" />
     <MESSAGE value="协程 goroutine基本使用" />
     <MESSAGE value="runtime包 初步使用、&#10;sync.Mutex 锁使用、&#10;sync.WaitGroup使用、&#10;channel 初步使用、发送和读取-阻塞验证、死锁验证。" />
-    <option name="LAST_COMMIT_MESSAGE" value="runtime包 初步使用、&#10;sync.Mutex 锁使用、&#10;sync.WaitGroup使用、&#10;channel 初步使用、发送和读取-阻塞验证、死锁验证。" />
+    <MESSAGE value="channel 关闭、缓冲通道、定向通道使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="channel 关闭、缓冲通道、定向通道使用" />
   </component>
 </project>
