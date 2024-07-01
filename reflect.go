@@ -17,7 +17,15 @@ func main() {
 	x := 66.88
 	t := reflect.TypeOf(x)
 	v := reflect.ValueOf(x)
-	fmt.Println("Type:", t)
-	fmt.Println("Value:", v)
+	fmt.Printf("%T,%v\n", t, t)
+	fmt.Printf("%T,%v\n", v, v)
 	fmt.Println("kind of float64:", v.Kind())
+	xx := v.Interface()
+	fmt.Printf("%T,%v\n", xx, xx)
+	tt := v.Type()
+	fmt.Printf("%T,%v\n", tt, tt)
+
+	var all interface{}
+	all = x
+	fmt.Println(all)
 }

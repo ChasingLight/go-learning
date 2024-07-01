@@ -33,6 +33,10 @@ func main() {
 	cat := Cat{"xixi", "蓝色"}
 	cat.printInfo()
 
+	fmt.Println("----------函数的调用------------------")
+	result := addNum(6, 8)
+	fmt.Println(result)
+
 }
 
 type Worker struct {
@@ -62,4 +66,8 @@ func (w Worker) printInfo() {
 
 func (c Cat) printInfo() {
 	fmt.Printf("猫咪的名字：%s，猫咪的毛色：%s\n", c.name, c.color)
+}
+
+func addNum(a, b int) (result int) {
+	return a + b
 }
