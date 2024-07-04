@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="定向通道、reflect反射、select 使用">
-      <change afterPath="$PROJECT_DIR$/reflect_func.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reflect_struct_method.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="111.">
+      <change afterPath="$PROJECT_DIR$/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/method.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,12 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2hiM5MXcwuVrHHkcROQRVEe08Rj" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,29 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../l_package" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
-  <component name="RunManager" selected="Go Build.go build basic (4)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build basic.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "D:/JadenData/jadenGoProject/src/basic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RunManager" selected="Go Build.go build basic">
     <configuration name="go build basic (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
@@ -74,15 +76,6 @@
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/reflect_struct.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build basic (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="basic" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/reflect.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -103,6 +96,15 @@
       <filePath value="$PROJECT_DIR$/reflect_func.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/http.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build reflect_struct_method.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
@@ -114,13 +116,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build basic" />
         <item itemvalue="Go Build.go build basic (4)" />
         <item itemvalue="Go Build.go build reflect_struct_method.go" />
         <item itemvalue="Go Build.go build basic (3)" />
         <item itemvalue="Go Build.go build basic (1)" />
-        <item itemvalue="Go Build.go build basic (2)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-33c477a475b1-e0158606a674-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.17011.92" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-GO-241.17011.92" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -144,7 +154,8 @@
       <workItem from="1719190507576" duration="729000" />
       <workItem from="1719199177303" duration="3007000" />
       <workItem from="1719560100399" duration="7156000" />
-      <workItem from="1719796158844" duration="5501000" />
+      <workItem from="1719796158844" duration="8034000" />
+      <workItem from="1719813080455" duration="81000" />
     </task>
     <task id="LOCAL-00001" summary="指针 相关知识学习。">
       <created>1718086232601</created>
@@ -223,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719208552216</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1. 函数(function) 和 方法(method) 区别；&#10;2. reflect反射：获取结构体的字段、方法；函数反射使用。">
+      <created>1719801711013</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719801711013</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,12 +252,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="指针 相关知识学习。" />
@@ -253,6 +276,11 @@
     <MESSAGE value="runtime包 初步使用、&#10;sync.Mutex 锁使用、&#10;sync.WaitGroup使用、&#10;channel 初步使用、发送和读取-阻塞验证、死锁验证。" />
     <MESSAGE value="channel 关闭、缓冲通道、定向通道使用" />
     <MESSAGE value="定向通道、reflect反射、select 使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="定向通道、reflect反射、select 使用" />
+    <MESSAGE value="1. 函数(function) 和 方法(method) 区别；&#10;2. reflect反射：获取结构体的字段、方法；函数反射使用。" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 函数(function) 和 方法(method) 区别；&#10;2. reflect反射：获取结构体的字段、方法；函数反射使用。" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
