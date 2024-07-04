@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Hello</title>
+</head>
+<body>
+<!--说明：{{ . }} 这里的点 代表后端传递过来的 当前对象-->
+<p style="color:red">当前对象 {{ . }}</p>
+<br>
+<p style="color:red">user对象</p>
+<p>姓名：{{.user.Name}}</p>
+<p>年龄：{{.user.Age}}</p>
+<p>性别：{{.user.Gender}}</p>
+<p>唯一码：{{.user.Code}}</p>
+<br>
+<p style="color:red">map1对象</p>
+<p>姓名：{{.map1.name}}</p>
+<p>年龄：{{.map1.age}}</p>
+<p>性别：{{.map1.gender}}</p>
+<p>唯一码：{{.map1.code}}</p>
+
+</body>
+</html>

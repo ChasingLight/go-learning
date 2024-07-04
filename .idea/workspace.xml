@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="111.">
-      <change afterPath="$PROJECT_DIR$/http.go" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="http包简单使用（get请求）">
+      <change afterPath="$PROJECT_DIR$/hello.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/http_template.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build basic (2).executor": "Run",
     "Go Build.go build basic.executor": "Run",
+    "JavaScript Debug.hello.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -68,23 +70,14 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Go Build.go build basic">
-    <configuration name="go build basic (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build basic (2)">
+    <configuration name="go build basic (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/reflect_struct.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build basic (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="basic" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/method.go" />
+      <filePath value="$PROJECT_DIR$/http_template.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -114,13 +107,16 @@
       <filePath value="$PROJECT_DIR$/reflect_struct_method.go" />
       <method v="2" />
     </configuration>
+    <configuration name="hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/basic/hello.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build basic (2)" />
+        <item itemvalue="JavaScript Debug.hello.html" />
         <item itemvalue="Go Build.go build basic" />
         <item itemvalue="Go Build.go build basic (4)" />
         <item itemvalue="Go Build.go build reflect_struct_method.go" />
-        <item itemvalue="Go Build.go build basic (3)" />
-        <item itemvalue="Go Build.go build basic (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +273,8 @@
     <MESSAGE value="channel 关闭、缓冲通道、定向通道使用" />
     <MESSAGE value="定向通道、reflect反射、select 使用" />
     <MESSAGE value="1. 函数(function) 和 方法(method) 区别；&#10;2. reflect反射：获取结构体的字段、方法；函数反射使用。" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 函数(function) 和 方法(method) 区别；&#10;2. reflect反射：获取结构体的字段、方法；函数反射使用。" />
+    <MESSAGE value="http包简单使用（get请求）" />
+    <option name="LAST_COMMIT_MESSAGE" value="http包简单使用（get请求）" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
