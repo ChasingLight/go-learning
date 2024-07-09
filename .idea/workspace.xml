@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="http包简单使用（get请求）">
-      <change afterPath="$PROJECT_DIR$/hello.html" afterDir="false" />
+    <list default="true" id="3bc580de-8d12-46a5-8600-6dff6c3a55f7" name="Default Changelist" comment="http包 + template包，传递多个参数进行模版渲染。">
+      <change afterPath="$PROJECT_DIR$/func_closure_common_scene.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/http_template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func_closure.go" beforeDir="false" afterPath="$PROJECT_DIR$/func_closure.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build basic (1).executor": "Run",
     "Go Build.go build basic (2).executor": "Run",
+    "Go Build.go build basic (3).executor": "Run",
     "Go Build.go build basic.executor": "Run",
     "JavaScript Debug.hello.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,7 +72,16 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Go Build.go build basic (2)">
+  <component name="RunManager" selected="Go Build.go build basic (3)">
+    <configuration name="go build basic (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/func_closure.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build basic (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
@@ -80,13 +91,13 @@
       <filePath value="$PROJECT_DIR$/http_template.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build basic (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build basic (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="basic" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="basic" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/reflect_func.go" />
+      <filePath value="$PROJECT_DIR$/func_closure_common_scene.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -98,25 +109,16 @@
       <filePath value="$PROJECT_DIR$/http.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build reflect_struct_method.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="basic" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="basic" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/reflect_struct_method.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/basic/hello.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build basic (3)" />
+        <item itemvalue="Go Build.go build basic (1)" />
         <item itemvalue="Go Build.go build basic (2)" />
         <item itemvalue="JavaScript Debug.hello.html" />
         <item itemvalue="Go Build.go build basic" />
-        <item itemvalue="Go Build.go build basic (4)" />
-        <item itemvalue="Go Build.go build reflect_struct_method.go" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +276,8 @@
     <MESSAGE value="定向通道、reflect反射、select 使用" />
     <MESSAGE value="1. 函数(function) 和 方法(method) 区别；&#10;2. reflect反射：获取结构体的字段、方法；函数反射使用。" />
     <MESSAGE value="http包简单使用（get请求）" />
-    <option name="LAST_COMMIT_MESSAGE" value="http包简单使用（get请求）" />
+    <MESSAGE value="http包 + template包，传递多个参数进行模版渲染。" />
+    <option name="LAST_COMMIT_MESSAGE" value="http包 + template包，传递多个参数进行模版渲染。" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

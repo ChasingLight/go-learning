@@ -2,29 +2,23 @@ package main
 
 import "fmt"
 
-func main() {
-	/*
-		闭包函数：
-		当它们在函数体内引用了外部变量时，这些变量将被“绑定”到闭包中，
-		即使这些变量超出了它们的原始作用域，闭包依然可以访问和修改它们。
-	*/
-	// 创建两个独立的计数器
-	counter1 := createCounter()
-	counter2 := createCounter()
-
-	fmt.Println(counter1()) // 输出: 1
-	fmt.Println(counter1()) // 输出: 2
-	fmt.Println(counter1()) // 输出: 3
-	fmt.Println(counter2()) // 输出: 1
-	fmt.Println(counter2()) // 输出: 2
-
+// 定义一个返回闭包函数的外部函数
+func outerFunction(x int) func(int) int {
+	// x 是外部函数中的变量
+	return func(y int) int {
+		return x + y
+	}
 }
 
-// 返回一个闭包函数
-func createCounter() func() int {
-	counter := 0
-	return func() int {
-		counter++
-		return counter
-	}
+func main() {
+	/*
+		闭包函数定义：是指在一个函数内部定义的函数。这个内部函数(即 闭包函数)可引用外部函数中的变量。
+				即使外部函数已经执行完毕并返回，内部函数依然可以访问这些变量。
+	*/
+
+	// 创建一个闭包函数实例
+	closureInstance := outerFunction(10)
+	// 调用闭包
+	result := closureInstance(5)
+	fmt.Println(result)
 }
